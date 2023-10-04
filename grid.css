@@ -27,15 +27,15 @@ header h1{
 
 #contain{
     display:grid;
-    grid-template-columns:200px 200px 200px;
-    grid-auto-rows:200px 200px 200px 200px;
+    grid-template-columns:200px 200px 200px; /*creats 3 columns*/
+    grid-auto-rows:200px 200px 200px 200px; /*Creats 4 rows with 200px */
     height: 900px;
     border: 2px solid;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 20px; /*Gives gap between rows*/
+    column-gap: 20px; /*Gives gap between column*/
     margin-top: 20px;
 
 
@@ -55,18 +55,18 @@ div img{
 
 }
 .collage:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-start: 1; /* Making the first img to strech for 4 column*/
+    grid-column-end: 4; /* Starting from 1 and end in 4*/
     
 }
 .collage:nth-child(1) img{
     width:630px;
 }
 .collage:nth-child(4){
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-start: 2; /* Making the first img to strech for 4 rows*/ 
+    grid-row-end: 4;/* Starting from 1 and end in 4*/
 
 }
 .collage:nth-child(4) img{
-    height:400px;
+    height:400px;/*Adjusting img according to the strech*/
 }
